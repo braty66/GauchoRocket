@@ -20,7 +20,7 @@ $nombre =$_POST['nombre'];
 $apellido =$_POST['apellido'];
 $fechaNacimiento =$_POST['fecha'];
 $email =$_POST['mail'];
-$pass =$_POST['password'];
+$pass = md5($_POST['password']);
 $stmt->execute();
 
 $stmt->close();

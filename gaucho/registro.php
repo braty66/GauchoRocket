@@ -17,13 +17,13 @@
 include './view/header.php'
 ?>
 <h3>Ingresar los campos requeridos</h3>
-<form class="w3-margin" method="post" action="registrarUsuario.php" name="registro">
+<form class="w3-margin" method="post" action="../dataBase/registrarUsuario.php" name="registro">
     <label for="nombre">Nombre:</label>
     <input class="w3-input" type="text" name="nombre" id="nombre">
     <label for="apellido">Apellido</label>
     <input  class="w3-input" type="text" name="apellido" id="apellido">
     <label for="fecha">Fecha de Nacimiento:</label>
-    <input class="w3-input" type="date" name="fecha" id="fecha" min="2018-01-01" max="2018-12-31">
+    <input class="w3-input" type="date" name="fecha" id="fecha" min="1950-01-01" max="2018-12-31">
     <label for="mail">Email</label>
     <input class="w3-input" type="email" name="mail" id="mail">
     <label for="password">Password</label>
