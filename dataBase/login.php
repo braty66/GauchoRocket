@@ -13,7 +13,7 @@ $conn = new mysqli($server, $user, $password,$database);
 if ($conn->connect_error) {
     die("Fallo la conexion: " . $conn->connect_error);
 }
-$sql = "SELECT email, contraseña,nombre FROM Usuario WHERE email = '$usuario'AND contraseña = '$pass'";
+$sql = "SELECT email, contraseña FROM Usuario WHERE email = '$usuario'AND contraseña = '$pass'";
 
 $result = $conn->query($sql);
 $count = mysqli_num_rows($result);
