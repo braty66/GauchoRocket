@@ -27,7 +27,7 @@
         <label for="usuario">Usuario</label>
         <input class="w3-input" type="email" name="usuario" id="usuario">
         <label for="password">Contraseña</label>
-        <input class="w3-input w3-margin-bottom" type="password" name="password" id="password">
+        <input class="w3-input w3-margin-bottom" type="password" name="pass" id="password">
         <button class="w3-button w3-blue w3-margin" >Ingresar</button>
     </form>
         <a href="http://localhost:63342/GauchoRocket/gaucho/registro.php">registrarme</a>
