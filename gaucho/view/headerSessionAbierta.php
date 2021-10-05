@@ -8,7 +8,6 @@
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="/GauchoRocket/gaucho/css/style.css">
     <script src="https://kit.fontawesome.com/2b2506e7ac.js" crossorigin="anonymous"></script>
     <title>GauchoRocket</title>
@@ -25,6 +24,8 @@
             <a href="#work" class="w3-bar-item w3-button"><i class="fa fa-th"></i> RESERVAS</a>
             <a href="#pricing" class="w3-bar-item w3-button"><i class="fa fa-suitcase"></i> VIAJES</a>
             <a href="#contact" class="w3-bar-item w3-button"><i class="fa fa-envelope"></i> CONTACTO</a>
+            <a href="/gaucho/cerrarSession.php" class="w3-bar-item w3-button"><i class="fa fa-door-closed"></i> CERRAR SESION</a>
+
         </div>
         <!-- Hide right-floated links on small screens and replace them with a menu icon -->
 
@@ -42,6 +43,7 @@
     <a href="#work" onclick="w3_close()" class="w3-bar-item w3-button">VIAJES</a>
     <a href="#pricing" onclick="w3_close()" class="w3-bar-item w3-button">TOUR</a>
     <a href="#contact" onclick="w3_close()" class="w3-bar-item w3-button">CONTACTO</a>
+    <a href="#contact" class="w3-bar-item w3-button"><i class="fa fa-door-closed"></i> CERRAR SESION</a>
 </nav>
 <script>
     // Modal Image Gallery

@@ -32,7 +32,7 @@
         <input class="w3-input w3-margin-bottom" type="password" name="pass" id="password">
         <button class="w3-button w3-black w3-margin" >Ingresar</button>
     </form>
-        <a class="w3-text-black w3-small w3-hover-black" href="http://localhost:63342/GauchoRocket/gaucho/registro.php">registrarme</a>
+        <a class="w3-text-black w3-small w3-hover-black" href="http://localhost/GauchoRocket/gaucho/registro.php">registrarme</a>
         <a class="w3-text-black w3-small w3-hover-black" href="">recuperar contraseña</a>
     </div>
 </div>

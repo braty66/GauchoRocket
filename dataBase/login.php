@@ -3,7 +3,7 @@
 $usuario = isset( $_POST["usuario"])?$_POST["usuario"] : "";
 $pass = isset( $_POST["pass"])?$_POST["pass"] : "";
 session_start();
-$_SESSION['usuario'] = $usuario;
+
 
 $server = "localhost";
 $user = "root";
@@ -19,11 +19,15 @@ $resultado =$conn->query($sql);
 $filas=$resultado->fetch_array(MYSQLI_ASSOC);
  print_r($filas);
 if($filas['id_cargo']==1){//administrador
-    header('location:http://localhost:63342/GauchoRocket/gaucho/index.php');
+    $_SESSION['administrador'] = $usuario;
+    header('location:http://localhost/GauchoRocket/gaucho/homeAdmin.php');
 }elseif ($filas['id_cargo']==2){//cliente
-    header('Location:http://localhost:63342/GauchoRocket/gaucho/index.php');
+    $_SESSION['cliente'] = $usuario;
+    header('Location:http://localhost/GauchoRocket/gaucho/homeUsuario.php');
 }else{
-    header('location:http://localhost:63342/GauchoRocket/gaucho/iniciarSesion.php');
+
+    header('location:http://localhost/GauchoRocket/gaucho/iniciarSesion.php');
+
 }
 $resultado->free_result();
 $conn->close();
