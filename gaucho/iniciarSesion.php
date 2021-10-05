@@ -17,22 +17,29 @@
    include './view/header.php'
 
 ?>
+<div class="bgimg-1 w3-container">
 
-<div id="iniciarSesion" class="w3-card-4 w3-center w3-margin">
-    <div class="w3-container w3-blue ">
+
+    <div id="iniciarSesion" class="w3-card-4 w3-auto w3-margin w3-white w3-display-middle">
+    <div class="w3-container w3-black ">
         <h3>Iniciar Sesión</h3>
     </div>
     <div class="w3-container">
-    <form  method="post" name="login" action="../dataBase/login.php">
+    <form   method="post" name="login" action="../dataBase/login.php">
         <label for="usuario">Usuario</label>
         <input class="w3-input" type="email" name="usuario" id="usuario">
         <label for="password">Contraseña</label>
         <input class="w3-input w3-margin-bottom" type="password" name="pass" id="password">
-        <button class="w3-button w3-blue w3-margin" >Ingresar</button>
+        <button class="w3-button w3-black w3-margin" >Ingresar</button>
     </form>
-        <a href="http://localhost:63342/GauchoRocket/gaucho/registro.php">registrarme</a>
-        <a href="">recuperar contraseña</a>
+        <a class="w3-text-black w3-small w3-hover-black" href="http://localhost:63342/GauchoRocket/gaucho/registro.php">registrarme</a>
+        <a class="w3-text-black w3-small w3-hover-black" href="">recuperar contraseña</a>
     </div>
 </div>
+    </div>
+<?php
+include './view/footer.php'
+?>
+
 </body>
 </html>

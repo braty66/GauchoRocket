@@ -30,7 +30,10 @@ include './view/header.php'
     <input class="w3-input" type="password" name="password" id="password">
     <label for="confirmacion">Reingresá el password</label>
     <input class="w3-input" type="password" name="confirmacion" id="confirmacion">
-    <button class="w3-button w3-blue w3-margin" >Registrar</button>
+    <button class="w3-button w3-black w3-margin" >Registrar</button>
 </form>
+<?php
+include './view/footer.php'
+?>
 </body>
 </html>
